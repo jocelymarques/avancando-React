@@ -1,19 +1,12 @@
 import './App.css';
-import Moon from "./assets/moon.jpg";
+import ManageData from './assets/Components/ManageData';
+
 
 function App() {
   return (
+    <ManageData/>
 
-    <>
-      <div>
-        <img src="/logo192.png" alt="moon" />
-      </div>
-      <div>
-        <img src={Moon} alt="moon" />
-      </div>
-    </>
-
-  );
+  )
 }
 
 export default App;
