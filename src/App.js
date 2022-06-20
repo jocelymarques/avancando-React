@@ -5,6 +5,7 @@ import ListRender from './assets/Components/ListRender';
 import ManageData from './assets/Components/ManageData';
 import ShowUserName from './assets/Components/ShowUserName';
 import CarDetails from './assets/Components/CarDetails';
+import Container from './assets/Components/Container';
 
 
 function App() {
@@ -31,6 +32,11 @@ function App() {
       {cars.map((car)=>(
         <CarDetails key={car.id} brand={car.brand} km={car.km} color={car.color} user={car.user} newCar={car.newCar}></CarDetails>
       ))}
+      <hr />
+      {/* Fragment */}
+      <Container>
+        <h3>Sub titulo</h3>
+      </Container>
 
     </>
 
